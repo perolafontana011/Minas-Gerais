@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minas Gerais: Terra de História e Riqueza</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #a00;
+    }
+
+    header {
+      background-color: #a00;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .tab {
+      background-color: #fff;
+      border: 2px solid #a00;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tab:hover {
+      background-color: #fdd;
+    }
+
+    .content {
+      display: none;
+      padding: 30px;
+      border-top: 2px solid #a00;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff8f8;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #a00;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #a00;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Minas Gerais</h1>
+    <p>Uma celebração da história, cultura e beleza do estado</p>
+  </header>
+
+  <nav>
+    <div class="tab" onclick="showContent('historia')">História</div>
+    <div class="tab" onclick="showContent('cultura')">Cultura</div>
+    <div class="tab" onclick="showContent('infraestrutura')">Infraestrutura</div>
+    <div class="tab" onclick="showContent('populacao')">População</div>
+    <div class="tab" onclick="showContent('turismo')">Turismo</div>
+    <div class="tab" onclick="showContent('cidades')">Cidades</div>
+    <div class="tab" onclick="showContent('mapa')">Mapa</div>
+    <div class="tab" onclick="showContent('imagens')">Imagens de Minas</div>
+  </nav>
+
+  <section id="historia" class="content">
+    <h2>História</h2>
+    <p>Minas Gerais nasceu com as expedições dos bandeirantes, no século XVII, em busca de ouro e pedras preciosas. A descoberta de grandes jazidas em 1693 transformou a região em centro econômico e populacional da colônia portuguesa. Cidades como Ouro Preto, Mariana e Tiradentes prosperaram e se tornaram símbolos do barroco brasileiro.</p>
+    <p>A Inconfidência Mineira, em 1789, liderada por Tiradentes, foi um dos primeiros movimentos separatistas do Brasil. Apesar de reprimido pela Coroa portuguesa, tornou-se referência histórica na luta por liberdade e independência.</p>
+    <p>No período republicano, Minas teve papel central na política nacional, principalmente na República Velha, com a política do "café com leite". Belo Horizonte foi inaugurada como capital planejada em 1897, sinalizando um novo momento de modernização.</p>
+    <p>Durante o século XX, o estado expandiu sua indústria, infraestrutura e educação, tornando-se referência em desenvolvimento e cultura. Minas permanece essencial para compreender a formação histórica do Brasil.</p>
+  </section>
+
+  <section id="cultura" class="content">
+    <h2>Cultura</h2>
+    <p>Minas Gerais é lar de uma cultura vibrante e acolhedora. As influências barrocas podem ser vistas em igrejas e centros históricos. A gastronomia inclui pratos típicos como pão de queijo, feijão tropeiro e doce de leite. As festas populares, como a Festa do Divino e a Folia de Reis, mostram a religiosidade e tradição do povo mineiro.</p>
+  </section>
+
+  <section id="infraestrutura" class="content">
+    <h2>Infraestrutura</h2>
+    <p>Minas possui uma das maiores malhas rodoviárias do país, além de uma rede ferroviária em expansão. O metrô de Belo Horizonte complementa o transporte urbano.</p>
+    <p><strong>Companhias de Luz e Água:</strong></p>
+    <ul>
+      <li>CEMIG – Companhia Energética de Minas Gerais</li>
+      <li>COPASA – Companhia de Saneamento de Minas Gerais</li>
+    </ul>
+    <p><strong>Rios Importantes:</strong> Rio São Francisco, Rio Doce, Rio Paranaíba, Rio Jequitinhonha, Rio Grande.</p>
+  </section>
+
+  <section id="populacao" class="content">
+    <h2>População</h2>
+    <p>Com mais de 20 milhões de habitantes, Minas Gerais é o segundo estado mais populoso do Brasil. Sua população é distribuída entre grandes centros urbanos como Belo Horizonte e pequenas cidades históricas e rurais.</p>
+  </section>
+
+  <section id="turismo" class="content">
+    <h2>Turismo</h2>
+    <p>Minas é um dos principais destinos turísticos do Brasil. Cidades históricas como Ouro Preto, Tiradentes e Diamantina encantam visitantes com arquitetura colonial. Ecoturismo é forte em áreas como Serra do Cipó, Parque do Ibitipoca e o Circuito das Águas. O artesanato, as fazendas históricas e os sabores mineiros completam a experiência.</p>
+  </section>
+
+  <section id="cidades" class="content">
+    <h2>Cidades</h2>
+    <p>Minas Gerais possui <strong>853 cidades</strong> — o maior número entre os estados brasileiros. Cada uma tem sua identidade, história e características únicas. Algumas das mais conhecidas:</p>
+    <ul>
+      <li>Belo Horizonte (capital)</li>
+      <li>Uberlândia</li>
+      <li>Contagem</li>
+      <li>Juiz de Fora</li>
+      <li>Montes Claros</li>
+      <li>Ouro Preto</li>
+      <li>Tiradentes</li>
+    </ul>
+  </section>
+
+  <section id="mapa" class="content">
+    <h2>Mapa de Minas Gerais</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7745357.493145311!2d-45.45145529999999!3d-18.577967899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690a165324289%3A0x112170c9379de7b3!2sMinas%20Gerais!5e0!3m2!1spt-BR!2sbr!4v1751653498820!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section id="imagens" class="content">
+    <h2>Imagens de Minas Gerais</h2>
+    <p>Veja algumas paisagens e referências visuais de Minas Gerais:</p>
+    <img src="https://jpimg.com.br/uploads/2023/05/ouro-preto-conheca-a-cidade-historica-mais-famosa-de-minas-gerais.jpg" alt="Ouro Preto" />
+    <img src="https://s2-g1.glbimg.com/qSCqQqHDEW_yt-tDu4AQGi_w9Qw=/0x0:605x340/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/3/j/6cMuVLSoy0EUdxAJWWTw/sb6.png" alt="Centro histórico de Sabará" />
+    <img src="https://destinosnotaveis.com.br/wp-content/uploads/2023/05/Cachoeira-Grande-Serra-do-Cipo-1.jpg" alt="Serra do Cipó" />
+  </section>
+
+  <footer>
+    &copy; Feito por Pérola Fontana Corchog - 2025
+  </footer>
+
+  <script>
+    function showContent(id) {
+      const sections = document.querySelectorAll('.content');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    // Exibe a aba de História por padrão
+    document.getElementById('historia').classList.add('active');
+  </script>
+
+</body>
+</html>
